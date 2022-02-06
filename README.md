@@ -1,4 +1,8 @@
-# Client
+# Angular App with Connection to Nestjs API
+
+![Angular App with Nestjs](/docs/principal-page.png)
+
+Requires downloading the repository of the following project [Nestjs and MongoDB Rest API - Edgar Valero](https://github.com/EdgarValero/nestjs-mongodb-rest-api).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
