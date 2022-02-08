@@ -15,22 +15,22 @@ export class ProductService {
   BASE_URL: string = 'http://localhost:3000';
 
   getProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>(`${this.BASE_URL}/product`);
+    return this.http.get<Product[]>(`${this.BASE_URL}/api/products`);
   }
 
   getProduct(id: string): Observable<Product> {
-    return this.http.get<Product>(`${this.BASE_URL}/product/${id}`);
+    return this.http.get<Product>(`${this.BASE_URL}/api/products/${id}`);
   }
 
   createProduct(product: Product): Observable<Product> {
-    return this.http.post<Product>(`${this.BASE_URL}/product/create`, product);
+    return this.http.post<Product>(`${this.BASE_URL}/api/products`, product);
   }
 
   deleteProduct(id: string): Observable<Product> {
-    return this.http.delete<Product>(`${this.BASE_URL}/product/delete?id=${id}`);
+    return this.http.delete<Product>(`${this.BASE_URL}/api/products?id=${id}`);
   }
 
   updateProduct(id: any, product: Product): Observable<Product> {
-    return this.http.put<Product>(`${this.BASE_URL}/product/update/${id}`, product);
+    return this.http.put<Product>(`${this.BASE_URL}/api/products/${id}`, product);
   }
 }
